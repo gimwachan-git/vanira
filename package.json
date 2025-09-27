@@ -1,0 +1,13 @@
+{
+  "name": "vanira",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "@vanira/vite-plugin-input-analyzer": "workspace:*",
+    "@prettier/plugin-oxc": "^0.0.4",
+    "@types/node": "^24.5.2"
+  }
+}
