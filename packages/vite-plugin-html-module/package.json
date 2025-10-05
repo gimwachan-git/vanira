@@ -1,0 +1,44 @@
+{
+  "name": "@vanira/vite-plugin-html-module",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Vite plugin to analyze html modules",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./client.d.ts",
+      "default": "./client.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "tsc -w -p ./tsconfig.json",
+    "build": "rimraf dist && tsc -p ./tsconfig.json",
+    "lint": "tsc --noEmit -p ./tsconfig.json"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "rollup",
+    "input",
+    "analyzer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "vite": "^7.1.9"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@parse5/tools": "^0.7.0",
+    "parse5": "^8.0.0"
+  }
+}

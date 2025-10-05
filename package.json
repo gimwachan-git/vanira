@@ -5,9 +5,13 @@
     "packages/*",
     "apps/*"
   ],
+  "scripts": {
+    "dev": "bun --filter '*' dev"
+  },
   "devDependencies": {
-    "@vanira/vite-plugin-input-analyzer": "workspace:*",
+    "@vanira/vite-plugin-html-module": "workspace:*",
     "@prettier/plugin-oxc": "^0.0.4",
-    "@types/node": "^24.5.2"
+    "@types/node": "^24.5.2",
+    "rimraf": "^6.0.1"
   }
 }

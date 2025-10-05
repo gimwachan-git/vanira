@@ -19,7 +19,9 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "types": ["@vanira/vite-plugin-html-module/client"]
   },
   "include": ["src"]
 }
